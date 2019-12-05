@@ -1,9 +1,29 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="botons">
     <ion-title>REGISTRO</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <h1 class="ion-text-center">INGRESE SUS DATOS</h1>
+  <ion-label>
+    <ion-input type="text" [(ngModel)]="name" placeholder="NOMBRE"></ion-input>
+  </ion-label>
+  <ion-label>
+    <ion-input type="text" [(ngModel)]="lastname" placeholder="APELLIDO"></ion-input>
+  </ion-label>
+  <ion-label>
+    <ion-input type="number" [(ngModel)]="identificacion" placeholder="IDENTIFICACION"></ion-input>
+  </ion-label>
+  <ion-label>
+    <ion-input type="text" [(ngModel)]="email" placeholder="EMAIL"></ion-input>
+  </ion-label>
+  <ion-label>
+    <ion-input type="number" [(ngModel)]="telefono" placeholder="TELEFONO"></ion-input>
+  </ion-label>
+  <ion-label>
+    <ion-input type="password" [(ngModel)]="password" placeholder="CONTRASEÑA"></ion-input>
+  </ion-label>
+  <ion-button (click)="guardar()" color="botons">CREAR CUENTA</ion-button>
+  <ion-button href="/login" color="botons">YA TENGO CUENTA</ion-button>
 </ion-content>
