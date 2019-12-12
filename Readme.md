@@ -10,7 +10,7 @@
  * Run `ionic serve` in a terminal from the project root.
 
  ## App Preview
- <img src="https://pbs.twimg.com/media/ELkImduW4AAH0K5?format=png&name=small raw=true" alt="Preview">
+ <img src="https://pbs.twimg.com/media/ELkImduW4AAH0K5?format=png&name=small?raw=true" alt="Preview">
 
 
 
