@@ -21,7 +21,7 @@ export class RegistroPage implements OnInit {
   ngOnInit() {
   }
   guardar() {
-    this.auth.guardar(this.email, this.password, this.name, this.identificacion, this.telefono, this.lastname).then( auth => {
+    this.auth.guardar(this.email, this.password, this.name, this.lastname, this.telefono, this.identificacion).then( auth => {
       this.router.navigate(['inicio']);
       console.log(auth);
     }).catch(err => console.log(err));
