@@ -23,7 +23,13 @@
   </ion-label>
   <ion-label>
     <ion-input type="password" [(ngModel)]="password" placeholder="CONTRASEÑA"></ion-input>
-  </ion-label>
-  <ion-button (click)="guardar()" color="botons">CREAR CUENTA</ion-button>
-  <ion-button href="/login" color="botons">YA TENGO CUENTA</ion-button>
+  </ion-label><br>  
+  <ion-item>
+    <ion-checkbox></ion-checkbox>
+    <ion-label>&nbsp; He leído y acepto términos y condiciones de uso</ion-label>
+  </ion-item>
+  <div class="centrado">
+      <ion-button (click)="guardar()" color="botons">CREAR CUENTA</ion-button>
+      <ion-button href="/login" color="botons">YA TENGO CUENTA</ion-button>
+  </div>
 </ion-content>
