@@ -15,3 +15,5 @@
 
 
  ## Environment
+ * NodeJS
+ * Ionic Framework
