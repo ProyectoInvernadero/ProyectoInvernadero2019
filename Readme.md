@@ -4,7 +4,7 @@
 
 
  ## Running
- * Clone this repository: `https://github.com/HsuanXyz/ionic3-chat.git`.
+ * Clone this repository: `https://github.com/ProyectoInvernadero/ProyectoInvernadero2019.git`.
  * Run `npm install` from the project root.
  * If you do not install the ionic CLI (`npm install -g ionic`)
  * Run `ionic serve` in a terminal from the project root.
