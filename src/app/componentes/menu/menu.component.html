@@ -1,18 +1,43 @@
-<ion-menu side="start" menuId="unico" contentId="principal">
+<ion-menu side="end" menuId="unico" contentId="principal">
   <ion-header>
     <ion-toolbar color="botons">
-      <ion-title>INVERNADERO</ion-title>
+      <ion-title>INVERNADERO TOMATE</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item href="/cultivo">CULTIVO</ion-item>
-      <ion-item href="../pages/">SENSORES</ion-item>
-      <ion-item href="../pages/">NOTIFICACIONES</ion-item>
-      <ion-item href="../pages/">PROCESOS</ion-item>
-      <ion-item href="../pages/">RECOMENDACIONES</ion-item>
-      <ion-item href="../pages/">ESTADISTICAS</ion-item><BR>
-      <ion-button (click)="cerrarSesion()" color="botons">Cerrar Sesion</ion-button>
+      <ion-item>
+        <ion-icon name="person"></ion-icon>
+        <ion-label>{{name.firebase}}</ion-label>
+      </ion-item><br>
+      <ion-item href="/cultivo">
+        <ion-icon name="flower"></ion-icon>
+        <ion-label>CULTIVO</ion-label>
+      </ion-item>
+      <ion-item href="../pages/">
+        <ion-icon name="wifi"></ion-icon>
+        <ion-label>SENSORES</ion-label>
+      </ion-item>
+      <ion-item href="/noticaciones">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>NOTIFICACIONES</ion-label>
+      </ion-item>
+      <ion-item href="/procesos">
+        <ion-icon name="sync"></ion-icon>
+        <ion-label>PROCESOS</ion-label>
+      </ion-item>
+      <ion-item href="/inicio">
+        <ion-icon name="bookmarks"></ion-icon>
+        <ion-label>RECOMENDACIONES</ion-label>
+      </ion-item>
+      <ion-item href="../pages/">
+        <ion-icon name="laptop"></ion-icon>
+        <ion-label>ESTADISTICAS</ion-label>
+      </ion-item><BR>
+      <ion-item>
+        <ion-icon name="exit"></ion-icon>
+        <ion-button (click)="cerrarSesion()" color="botons">Cerrar Sesion</ion-button>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
