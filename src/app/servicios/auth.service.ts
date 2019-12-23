@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { AngularFirestore } from '@angular/fire/firestore';
-import * as firebase from 'firebase';
-import { AlertController } from '@ionic/angular';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +19,7 @@ export class AuthService {
     });
 
   }
+
   logout() {
     this.AFauth.auth.signOut().then(() => {
       this.router.navigate(['/login']);
@@ -44,21 +43,9 @@ export class AuthService {
       }).catch( err => reject(err));
     });
   }
-  recuperarContrasena(email: string) {
-    firebase.auth().sendPasswordResetEmail(email).then(function() {
-      const alert = this.alertCtrl.create({
-        title: 'correcto',
-        subTitle: 'datos enviados',
-        buttons: ['ok']
+  recuperar(usuario: string) {
+      this.AFauth.auth.sendPasswordResetEmail(usuario).then( () => {
+        this.router.navigate(['/login']);
       });
-      alert.present();
-    }).catch(function(error) {
-      const alert = this.alertCtrl.create({
-        title: 'error',
-        subTitle: 'datos no fueron enviados',
-        buttons: ['ok']
-      });
-      alert.present();
-    });
   }
 }

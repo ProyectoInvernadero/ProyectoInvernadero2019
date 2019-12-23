@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="center">RECUPERAR CUENTA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> <br><br><br><br><br>
+  <h3 text-center>INGRESAR TU CORREO</h3><br>
+  <ion-item>
+    <ion-label position="floating "></ion-label>
+    <ion-input type="email" placeholder="Usuario" name="usuario" [(ngModel)]="usuario" text-center></ion-input>
+  </ion-item><br>
+  <div class="centrado">
+    <ion-button (click)="recuperar()" shape="round" color="botons">RECUPERAR</ion-button><br> <br>
+  </div>
+</ion-content>
