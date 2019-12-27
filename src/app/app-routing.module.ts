@@ -9,6 +9,9 @@ const routes: Routes = [
   { path: 'login', loadChildren: './componentes/login/login.module#LoginPageModule' },
   { path: 'registro', loadChildren: './componentes/registro/registro.module#RegistroPageModule', canActivate : [NoLoginGuard] },
   { path: 'cultivo', loadChildren: './pages/cultivo/cultivo.module#CultivoPageModule' },
+  { path: 'procesos', loadChildren: './pages/procesos/procesos.module#ProcesosPageModule' },  { path: 'recuperacion', loadChildren: './componentes/recuperacion/recuperacion.module#RecuperacionPageModule' },
+
+
 
 ];
 

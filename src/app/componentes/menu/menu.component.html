@@ -1,23 +1,43 @@
-<ion-menu side="start" menuId="unico" contentId="principal">
+<ion-menu side="end" menuId="unico" contentId="principal">
   <ion-header>
     <ion-toolbar color="botons">
-      <ion-title>Invernadero Tomate</ion-title>
+      <ion-title>INVERNADERO TOMATE</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item href="/cultivo">Cultivo</ion-item>
-      <svg id="local_florist-24px" xmlns="http://www.w3.org/2000/svg" width="68.5" height="68.5" viewBox="0 0 68.5 68.5">
-        <path id="Path_15" data-name="Path 15" d="M0,0H68.5V68.5H0Z" fill="none"/>
-        <path id="Path_16" data-name="Path 16" d="M31.745,63.995c15.873,0,28.745-12.089,28.745-27C44.616,37,31.745,49.086,31.745,63.995ZM11.3,28.748a7.756,7.756,0,0,0,7.985,7.5,8.308,8.308,0,0,0,4.535-1.32l-.064.57A7.756,7.756,0,0,0,31.745,43a7.756,7.756,0,0,0,7.985-7.5l-.064-.57a8.229,8.229,0,0,0,4.535,1.32,7.756,7.756,0,0,0,7.985-7.5A7.458,7.458,0,0,0,47.618,22a7.458,7.458,0,0,0,4.567-6.749,7.756,7.756,0,0,0-7.985-7.5,8.308,8.308,0,0,0-4.535,1.32l.064-.57A7.756,7.756,0,0,0,31.745,1,7.756,7.756,0,0,0,23.76,8.5l.064.57a8.229,8.229,0,0,0-4.535-1.32,7.756,7.756,0,0,0-7.985,7.5A7.458,7.458,0,0,0,15.871,22,7.458,7.458,0,0,0,11.3,28.748ZM31.745,14.5A7.756,7.756,0,0,1,39.729,22a7.756,7.756,0,0,1-7.985,7.5A7.756,7.756,0,0,1,23.76,22,7.756,7.756,0,0,1,31.745,14.5ZM3,37c0,14.909,12.871,27,28.745,27C31.745,49.086,18.873,37,3,37Z" transform="translate(2.505 0.835)"/>
-      </svg>
-      
-      <ion-item href="/sensores">Sensores</ion-item>
-      <ion-item href="/notificacion">Notificaciones</ion-item>
-      <ion-item href="/procesos">Procesos</ion-item>
-      <ion-item href="/recomendaciones">Recomendaciones</ion-item>
-      <ion-item href="/estadisticas">Estadisticas</ion-item><BR>
-      <ion-button (click)="cerrarSesion()" color="botons">Cerrar Sesion</ion-button>
+      <ion-item>
+        <ion-icon name="person"></ion-icon>
+        <ion-label>{{name.firebase}}</ion-label>
+      </ion-item><br>
+      <ion-item href="/cultivo">
+        <ion-icon name="flower"></ion-icon>
+        <ion-label>CULTIVO</ion-label>
+      </ion-item>
+      <ion-item href="../pages/">
+        <ion-icon name="wifi"></ion-icon>
+        <ion-label>SENSORES</ion-label>
+      </ion-item>
+      <ion-item href="/noticaciones">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>NOTIFICACIONES</ion-label>
+      </ion-item>
+      <ion-item href="/procesos">
+        <ion-icon name="sync"></ion-icon>
+        <ion-label>PROCESOS</ion-label>
+      </ion-item>
+      <ion-item href="/inicio">
+        <ion-icon name="bookmarks"></ion-icon>
+        <ion-label>RECOMENDACIONES</ion-label>
+      </ion-item>
+      <ion-item href="../pages/">
+        <ion-icon name="laptop"></ion-icon>
+        <ion-label>ESTADISTICAS</ion-label>
+      </ion-item><BR>
+      <ion-item>
+        <ion-icon name="exit"></ion-icon>
+        <ion-button (click)="cerrarSesion()" color="botons">Cerrar Sesion</ion-button>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
