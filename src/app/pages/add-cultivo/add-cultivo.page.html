@@ -1,0 +1,49 @@
+<ion-header>
+    <!-- Icono a la Izquierda -->
+    <ion-toolbar color="botons">
+        <ion-buttons slot="end">
+          <ion-menu-button menu="unico" autoHide="false" color="light"></ion-menu-button>
+          </ion-buttons>
+      
+    <!-- Nombre de la Vista -->
+    <div class="center">
+      <ion-title> AÑADIR CULTIVO</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form onsubmit="processForm(event)">
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item>
+              <div class="center">
+            <ion-label position="floating">Tipo de cultivo<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput=""></ion-input>
+          </div>
+          </ion-item>
+          <ion-item>
+              <div class="center">
+            <ion-label position="floating">Cantidad de plantas<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="number" oninput=""></ion-input>
+          </div>
+          </ion-item>
+          <ion-item>
+              <div class="center">
+            <ion-label position="floating">Ubicacion del cultivo<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput=""></ion-input>
+          </div>
+          </ion-item>
+          <ion-item>
+              <div class="center">
+            <ion-label position="">Fecha de Inicio<ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="date" oninput=""></ion-input>
+          </div>
+          </ion-item>
+        </ion-list>
+
+        <div class="ion-padding">
+          <ion-button expand="block" type="submit" class="ion-no-margin">Create account</ion-button>
+        </div>
+      </form>
+
+  </ion-content>
