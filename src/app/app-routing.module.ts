@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
 import { NoLoginGuard } from './guards/nologin.guard';
 
+
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'inicio', loadChildren: './pages/inicio/inicio.module#InicioPageModule', canActivate : [AuthGuard] },
