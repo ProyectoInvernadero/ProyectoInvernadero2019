@@ -1,49 +1,219 @@
 <ion-header>
-    <!-- Icono a la Izquierda -->
-    <ion-toolbar color="botons">
-        <ion-buttons slot="end">
-          <ion-menu-button menu="unico" autoHide="false" color="light"></ion-menu-button>
-          </ion-buttons>
-      
+  <!-- Icono a la Izquierda -->
+  <ion-toolbar color="botons">
+    <ion-buttons slot="end">
+      <ion-menu-button menu="unico" autoHide="false" color="light"></ion-menu-button>
+    </ion-buttons>
+
     <!-- Nombre de la Vista -->
     <div class="center">
       <ion-title> AÑADIR CULTIVO</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form onsubmit="processForm(event)">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <div class="center">
+        <ion-button round color="danger">Cultivo</ion-button>
       </div>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-    <form onsubmit="processForm(event)">
-        <ion-list lines="full" class="ion-no-margin ion-no-padding">
-          <ion-item>
-              <div class="center">
-            <ion-label position="floating">Tipo de cultivo<ion-text color="danger">*</ion-text></ion-label>
-            <ion-input required type="text" oninput=""></ion-input>
-          </div>
-          </ion-item>
-          <ion-item>
-              <div class="center">
-            <ion-label position="floating">Cantidad de plantas<ion-text color="danger">*</ion-text></ion-label>
-            <ion-input required type="number" oninput=""></ion-input>
-          </div>
-          </ion-item>
-          <ion-item>
-              <div class="center">
-            <ion-label position="floating">Ubicacion del cultivo<ion-text color="danger">*</ion-text></ion-label>
-            <ion-input required type="text" oninput=""></ion-input>
-          </div>
-          </ion-item>
-          <ion-item>
-              <div class="center">
-            <ion-label position="">Fecha de Inicio<ion-text color="danger">*</ion-text></ion-label>
-            <ion-input required type="date" oninput=""></ion-input>
-          </div>
-          </ion-item>
-        </ion-list>
-
-        <div class="ion-padding">
-          <ion-button expand="block" type="submit" class="ion-no-margin">Create account</ion-button>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Tipo de cultivo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="text" oninput=""></ion-input>
         </div>
-      </form>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Cantidad de plantas<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Ubicacion del cultivo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="text" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="">Fecha de Inicio<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="date" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="secondary">Etapa</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Nombre de la Etapa<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="text" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Humedad Relativa</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Oxigeno</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Temperatura</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Ph</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
 
-  </ion-content>
+      <div class="center">
+        <ion-button round color="secondary">Proceso</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Nombre del Proceso<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="text" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Humedad Relativa</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Oxigeno</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Temperatura</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <div class="center">
+        <ion-button round color="light">Ph</ion-button>
+      </div>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Maximo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="center">
+          <ion-label position="floating">Minimo<ion-text color="danger">*</ion-text>
+          </ion-label>
+          <ion-input required type="number" oninput=""></ion-input>
+        </div>
+      </ion-item>
+
+    </ion-list>
+    <div class="center">
+
+      <ion-button round outline>Guardar<ion-icon slot="end" name="save"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Guardar<ion-icon slot="end" name="save"></ion-icon>
+      </ion-button>
+    </div>
+  </form>
+
+</ion-content>
