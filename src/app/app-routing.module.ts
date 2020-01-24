@@ -13,9 +13,13 @@ const routes: Routes = [
   { path: 'procesos', loadChildren: './pages/procesos/procesos.module#ProcesosPageModule' },
   { path: 'recuperacion', loadChildren: './componentes/recuperacion/recuperacion.module#RecuperacionPageModule' },
   { path: 'add-cultivo', loadChildren: './pages/add-cultivo/add-cultivo.module#AddCultivoPageModule' },
+  { path: 'sensores', loadChildren: './pages/sensores/sensores.module#SensoresPageModule' },
+  { path: 'notificaciones', loadChildren: './pages/notificaciones/notificaciones.module#NotificacionesPageModule' },
+  { path: 'estadisticas', loadChildren: './pages/estadisticas/estadisticas.module#EstadisticasPageModule' },
 
 
-  
+
+
 ];
 
 @NgModule({
