@@ -11,7 +11,7 @@ import { CultivoI } from '../models/cultivo.interface';
 export class CultivoService {
   private cultivosCollection: AngularFirestoreCollection<CultivoI>;
   private cultivos: Observable<CultivoI[]>;
-  
+
   constructor(db: AngularFirestore) {
     this.cultivosCollection = db.collection<CultivoI>('cultivos');
     this.cultivos = this.cultivosCollection.snapshotChanges().pipe(map(
@@ -24,22 +24,22 @@ export class CultivoService {
       }
     ));
    }
-   getCultivos(){
+   getCultivos() {
      return this.cultivos;
    }
-   getCultivo(id:string){
+   getCultivo(id: string) {
      return this.cultivosCollection.doc<CultivoI>(id).valueChanges();
    }
 
-   updateCultivo(cultivo: CultivoI, id: string){
+   updateCultivo(cultivo: CultivoI, id: string) {
      return this.cultivosCollection.doc(id).update(cultivo);
    }
 
-   addCultivo(cultivo: CultivoI){
+   addCultivo(cultivo: CultivoI) {
      return this.cultivosCollection.add(cultivo);
    }
 
-   removeCultivo(id: string){
+   removeCultivo(id: string) {
      return this.cultivosCollection.doc(id).delete();
    }
 }
