@@ -5,6 +5,7 @@
 export const environment = {
   production: false
 };
+// Se puede incluir esta funcion dentro de Environment
 export const firebaseConfig = {
   apiKey: 'AIzaSyDaIL5gpzhR7b-yeDDU0BO7mRwDhbds37Q',
   authDomain: 'proyecto-invernadero-factoria.firebaseapp.com',

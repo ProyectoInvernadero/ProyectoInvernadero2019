@@ -11,7 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComponentesModule } from './componentes/componentes.module';
 
 import { firebaseConfig } from '../environments/environment';
+
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { FirestoreSettingsToken, AngularFirestoreModule } from '@angular/fire/firestore';
 
@@ -24,13 +26,13 @@ import { FirestoreSettingsToken, AngularFirestoreModule } from '@angular/fire/fi
     AppRoutingModule,
     ComponentesModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule,  AngularFirestoreModule,
+    AngularFireAuthModule,  AngularFirestoreModule, AngularFireDatabaseModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    {provide: FirestoreSettingsToken, useValue: {}}
+    { provide: FirestoreSettingsToken, useValue: {}}
   ],
   bootstrap: [AppComponent]
 })
