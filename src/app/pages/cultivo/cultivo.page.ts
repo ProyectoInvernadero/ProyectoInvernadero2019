@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams, IonicModule } from '@ionic/angular';
 import { AddCultivoPage } from '../add-cultivo/add-cultivo.page'; // Esta Linea se Puede Borrar
 import { CultivoI } from '../../models/cultivo.interface';
-import { CultivoService } from '../../services/cultivo.service';
+import { CultivoService } from '../../servicios/cultivo.service';
 
 @Component({
   selector: 'app-cultivo',
