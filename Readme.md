@@ -1,5 +1,5 @@
-STATUS PROJECT   ##########75 %    in Development.
-# Last update 23 / 01 / 2020 /    11:54 pm
+STATUS PROJECT   ##########85 %    in Development.
+# Last update 26 / 01 / 2020 /    12:34 pm
 # Smart Grow
  ionic3 IOT - Invernadero Inteligente
 
