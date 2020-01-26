@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams, IonicModule } from '@ionic/angular';
-import { AddCultivoPage } from '../add-cultivo/add-cultivo.page'; // Esta Linea se Puede Borrar
+import { NavController } from '@ionic/angular';
+
 import { CultivoI } from '../../models/cultivo.interface';
 import { CultivoService } from '../../servicios/cultivo.service';
 
@@ -11,15 +11,15 @@ import { CultivoService } from '../../servicios/cultivo.service';
 })
 export class CultivoPage implements OnInit {
   cultivos: CultivoI[];
-  constructor(public navCtrl: NavController, private cultivoService: CultivoService) {  
+  constructor(public navCtrl: NavController, private cultivoService: CultivoService) {
 
   }
 
   ngOnInit() {
     this.cultivoService.getCultivos().subscribe(res => this.cultivos = res);
   }
-  navigateToAddCultivoPage(){
-    this.navCtrl.navigateForward('/add-cultivo');
-    
+  saveCultivo() {
+    this.navCtrl.navigateForward('/details');
+
   }
 }

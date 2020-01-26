@@ -20,7 +20,7 @@
     
   <ion-list>    
       <ion-item-sliding *ngFor="let cultivo of cultivos">
-        <ion-item lines="inset" button [routerLink]="['/cultivo', cultivo.id]">
+        <ion-item lines="inset" button [routerLink]="['/details', cultivo.id]">
          <ion-label>
           {{ cultivo.tipo }}
          </ion-label>
@@ -33,13 +33,11 @@
       </ion-item-sliding>
   </ion-list>
   <div class="center">
-    <ion-button (click)="navigateToAddCultivoPage()">
+    <ion-button (click)="saveCultivo()">
         Añadir Cultivo
         <ion-icon slot="end" name="add-circle"></ion-icon>
       </ion-button>
     </div>
-
-
 </ion-content>
     
      

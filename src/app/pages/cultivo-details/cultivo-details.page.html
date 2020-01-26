@@ -1,0 +1,42 @@
+<ion-header>
+  <!-- Icono a la Izquierda -->
+  <ion-toolbar color="botons">
+    <ion-buttons slot="end">
+      <ion-menu-button menu="unico" autoHide="false" color="light"></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Nombre de la Vista -->
+    <div class="center">
+      <ion-title>CULTIVO</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <!-- Descripcion del cultivo -->
+  <p align="center">DETALLES CULTIVO</p>
+
+  <ion-list lines="full">
+    <ion-item *ngIf="cultivo">
+      <ion-input required type="text" placeholder="Cultivo" [(ngModel)]="cultivo.tipo">
+      </ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="cultivo">
+      <ion-input required type="number" placeholder="Cantidad" [(ngModel)]="cultivo.cantidad">
+      </ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="saveCultivo()">Save</ion-button>
+  </ion-list>
+  <div class="center">
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">
+      <ion-fab-button color="danger" routerLink="/cultivo" routerDirection="forward" (click)
+      ="onRemove(cultivoId)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>
