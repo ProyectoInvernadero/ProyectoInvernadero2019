@@ -116,18 +116,117 @@
       </div>
     </ion-item>
 
+    <div class="center">
+      <ion-button round color="light">Ph</ion-button>
+    </div>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Maximo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Maxima" [(ngModel)]="cultivo.phMax">
+        </ion-input>
+      </div>
+    </ion-item>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Minimo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Minimo" [(ngModel)]="cultivo.phMin" oninput=""></ion-input>
+      </div>
+    </ion-item>
+
+    <div class="center">
+      <ion-button round color="secondary">PROCESO</ion-button>
+    </div>
+
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label position="">Nombre del proceso<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" placeholder="Proceso" [(ngModel)]="cultivo.nombreP">
+        </ion-input>
+      </div>
+    </ion-item>
 
 
+    <div class="center">
+      <ion-button round color="light">Humedad Relativa</ion-button>
+    </div>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Maximo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Maxima" [(ngModel)]="cultivo.humedadMaxP">
+        </ion-input>
+      </div>
+    </ion-item>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Minimo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Minimo" [(ngModel)]="cultivo.humedadMinP" oninput=""></ion-input>
+      </div>
+    </ion-item>
 
+    <div class="center">
+      <ion-button round color="light">Oxigeno</ion-button>
+    </div>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Maximo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Maxima" [(ngModel)]="cultivo.oxigenoMaxP">
+        </ion-input>
+      </div>
+    </ion-item>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Minimo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Minimo" [(ngModel)]="cultivo.oxigenoMinP" oninput=""></ion-input>
+      </div>
+    </ion-item>
 
-    <ion-button expand="full" (click)="saveCultivo()">Save</ion-button>
-  </ion-list>
+    <div class="center">
+      <ion-button round color="light">Temperatura</ion-button>
+    </div>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Maximo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Maxima" [(ngModel)]="cultivo.temperaturaMaxP">
+        </ion-input>
+      </div>
+    </ion-item>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Minimo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Minimo" [(ngModel)]="cultivo.temperaturaMinP" oninput=""></ion-input>
+      </div>
+    </ion-item>
 
-  <div class="center">
-    <ion-fab horizontal="end" slot="fixed" color="danger">
-      <ion-fab-button color="danger" routerLink="/cultivo" routerDirection="forward" (click)="onRemove(cultivoId)">
-        <ion-icon name="trash"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  </div>
+    <div class="center">
+      <ion-button round color="light">Ph</ion-button>
+    </div>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Maximo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Maxima" [(ngModel)]="cultivo.phMaxP">
+        </ion-input>
+      </div>
+    </ion-item>
+    <ion-item *ngIf="cultivo">
+      <div class="center">
+        <ion-label>Minimo<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="number" placeholder="Minimo" [(ngModel)]="cultivo.phMinP" oninput=""></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-button expand="full" (click)="saveCultivo()">Guardar<ion-icon slot="end" name="save"></ion-icon></ion-button>
+  
+    <ion-button expand="block" color="danger" routerLink="/cultivo" routerDirection="forward" (click)="onRemove(cultivoId)" >Eliminar <ion-icon name="trash"></ion-icon>
+    </ion-button></ion-list>
 </ion-content>
