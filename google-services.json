@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1042852693715",
+    "firebase_url": "https://proyecto-invernadero-factoria.firebaseio.com",
+    "project_id": "proyecto-invernadero-factoria",
+    "storage_bucket": "proyecto-invernadero-factoria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042852693715:android:38c1aac400c03c56817626",
+        "android_client_info": {
+          "package_name": "com.usco.factoria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042852693715-0p1s3aqke0arloc7n7n735hocthl6rt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgB12Efvcy2dcjZ59eAsOcExv46gOv8kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042852693715-0p1s3aqke0arloc7n7n735hocthl6rt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
