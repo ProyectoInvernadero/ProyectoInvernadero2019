@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'add-cultivo', loadChildren: './pages/add-cultivo/add-cultivo.module#AddCultivoPageModule' },
   { path: 'cultivo', loadChildren: './pages/cultivo/cultivo.module#CultivoPageModule' },
   { path: 'details/:id', loadChildren: './pages/cultivo-details/cultivo-details.module#CultivoDetailsPageModule' },
-  { path: 'details', loadChildren: './pages/cultivo-details/cultivo-details.module#CultivoDetailsPageModule' }
+  { path: 'details', loadChildren: './pages/cultivo-details/cultivo-details.module#CultivoDetailsPageModule' },  { path: 'monitoreo', loadChildren: './pages/monitoreo/monitoreo.module#MonitoreoPageModule' }
+
 ];
 
 @NgModule({
