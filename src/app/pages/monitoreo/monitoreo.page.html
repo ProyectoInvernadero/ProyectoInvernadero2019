@@ -1,0 +1,93 @@
+<ion-header>
+  <!-- Icono a la Izquierda -->
+  <ion-toolbar color="botons">
+    <ion-buttons slot="end">
+      <ion-menu-button menu="unico" autoHide="false" color="light"></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Nombre de la Vista -->
+    <div class="center">
+      <ion-title>NOTIFICACIONES</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item-sliding *ngFor="let cultivo of cultivos">  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sensor PH</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+Fecha: 
+       <ion-label>
+        {{ cultivo.fechaI }}  
+       </ion-label>
+      Hora: 01:23:56 AM.
+      El valor registrado por el sensor ph fue: 8
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sensor Temperatura</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Fecha: 
+             <ion-label>
+              {{ cultivo.fechaI }}  
+             </ion-label>
+            Hora: 03:10:13 AM.
+            El valor registrado por el sensor temperatura fue: 23
+          </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sensor PH</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Fecha: 
+             <ion-label>
+              {{ cultivo.fechaI }}  
+             </ion-label>
+            Hora: 10:37:67 PM.
+            El valor registrado por el sensor ph fue: 6
+          </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sensor Temperatura</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Fecha: 
+             <ion-label>
+              {{ cultivo.fechaI }}  
+             </ion-label>
+            Hora: 11:23:12 AM.
+            El valor registrado por el sensor temperatura fue: 24
+          </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sensor Humedad relativa</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Fecha: 
+             <ion-label>
+              {{ cultivo.fechaI }}  
+             </ion-label>
+            Hora: 09:08:12 AM.
+            El valor registrado por el sensor humedad fue: 34
+          </ion-card-content>
+  </ion-card>
+
+</ion-item-sliding>
+</ion-content>
