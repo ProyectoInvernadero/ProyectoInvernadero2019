@@ -12,22 +12,12 @@ const routes: Routes = [
   { path: 'procesos', loadChildren: './pages/procesos/procesos.module#ProcesosPageModule' },
   { path: 'recuperacion', loadChildren: './componentes/recuperacion/recuperacion.module#RecuperacionPageModule' },
   { path: 'add-cultivo', loadChildren: './pages/add-cultivo/add-cultivo.module#AddCultivoPageModule' },
-<<<<<<< HEAD
   { path: 'cultivo', loadChildren: './pages/cultivo/cultivo.module#CultivoPageModule' },
-<<<<<<< HEAD
   { path: 'details/:id', loadChildren: './pages/cultivo-details/cultivo-details.module#CultivoDetailsPageModule' },
-  { path: 'details', loadChildren: './pages/cultivo-details/cultivo-details.module#CultivoDetailsPageModule' }
-=======
-=======
+  { path: 'details', loadChildren: './pages/cultivo-details/cultivo-details.module#CultivoDetailsPageModule' },
   { path: 'sensores', loadChildren: './pages/sensores/sensores.module#SensoresPageModule' },
   { path: 'notificaciones', loadChildren: './pages/notificaciones/notificaciones.module#NotificacionesPageModule' },
   { path: 'estadisticas', loadChildren: './pages/estadisticas/estadisticas.module#EstadisticasPageModule' },
-
-
-
-
->>>>>>> cambios
->>>>>>> cambios
 ];
 
 @NgModule({
